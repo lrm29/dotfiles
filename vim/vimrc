@@ -1,8 +1,14 @@
 execute pathogen#infect('~/.vim/bundle/{}')
 
+colorscheme slate
 syntax on
 
 filetype plugin indent on
 
 noremap ; :
 noremap : ;
+
+map <C-K> :pyf $HOME/scripts/clang-format.py<cr>
+imap <C-K> <c-o>:pyf $HOME/scripts/clang-format.py<cr>
+
+set colorcolumn=80

@@ -4,3 +4,27 @@
 
 [core]
     editor = vim
+
+[push]
+    default = simple
+
+[color]
+    ui = true
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
+[alias]
+    # Pretty print git log
+    lg = log \
+         --graph \
+         --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
+         --abbrev-commit
+
+    # Delete top commit. Loses the changes.
+    delete-top-commit = reset --hard HEAD~1
+
+    # Removes top commit. Keeps changes.
+    undo-top-commit = reset --soft HEAD~1
+
+    s = status

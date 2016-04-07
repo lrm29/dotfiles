@@ -1,3 +1,5 @@
 set -gx fish_function_path \
-    /home/lrm29/.config/fish/functions \
-    /home/lrm29/Packages/share/fish/functions
+    $HOME/.config/fish/functions \
+    $HOME/LocalPackages/share/fish/functions
+
+appendTo PATH $HOME/scripts

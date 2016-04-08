@@ -12,3 +12,4 @@ map <C-K> :pyf $HOME/scripts/clang-format.py<cr>
 imap <C-K> <c-o>:pyf $HOME/scripts/clang-format.py<cr>
 
 set colorcolumn=80
+set number

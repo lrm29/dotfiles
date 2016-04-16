@@ -1,8 +1,16 @@
-# fish
-ln -sf -t ~/.config ~/dotfiles/fish
+#!/usr/bin/env fish
 
-# vim
-ln -sf ~/dotfiles/vim/vimrc ~/.vimrc
+set -l packages \
+    eslint      \
+    fish        \
+    git         \
+    vim         \
+    vscode
 
-# git
-ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
+for package in $packages
+    set -l stowDir (pwd)
+    set -l targetDir $HOME
+
+    echo "Installing $package to $targetDir..."
+    stow -d $stowDir -t $targetDir $package
+end

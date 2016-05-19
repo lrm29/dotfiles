@@ -3,6 +3,7 @@
 set -l packages \
     eslint      \
     fish        \
+    omf         \
     git         \
     vim         \
     vscode

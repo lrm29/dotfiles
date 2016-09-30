@@ -1,3 +1,3 @@
 # vim
-set -x EDITOR vim
-set -x VISUAL vim
+set -gx EDITOR vim
+set -gx VISUAL vim

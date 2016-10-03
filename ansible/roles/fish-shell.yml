@@ -1,0 +1,13 @@
+---
+    - name: Fish Shell
+      git: repo=https://github.com/fish-shell/fish-shell.git
+           dest={{ sources }}/fish-shell
+
+    - name: Build Fish Shell
+      shell: "{{ item }}"
+      args:
+        chdir: "{{ sources }}/fish-shell"
+      with_items:
+        - ./configure --prefix={{ install_dir }}
+        - make -j{{ nCores }}
+        - make install

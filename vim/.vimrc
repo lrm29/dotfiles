@@ -12,11 +12,12 @@ set number
 set nowrap
 set hlsearch
 set colorcolumn=79
+set backspace=2
 
 filetype plugin indent on
 
 noremap ; :
 noremap : ;
 
-map <C-K> :pyf $HOME/scripts/clang-format.py<cr>
-imap <C-K> <c-o>:pyf $HOME/scripts/clang-format.py<cr>
+map <C-K> :pyf ~/scripts/clang-format.py<cr>
+imap <C-K> <c-o>:pyf ~/scripts/clang-format.py<cr>

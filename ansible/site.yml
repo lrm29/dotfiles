@@ -1,0 +1,7 @@
+---
+- name: Development Environment Setup
+  hosts: all
+
+  roles:
+    - { role: vim }
+    - { role: fish-shell }

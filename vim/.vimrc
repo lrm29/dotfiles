@@ -4,6 +4,17 @@ colorscheme slate
 set gfn=Source\ Code\ Pro\ Medium\ 11
 syntax on
 
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+set number
+set nowrap
+set hlsearch
+set colorcolumn=79
+set backspace=2
+
 filetype plugin indent on
 set expandtab
 set tabstop=4

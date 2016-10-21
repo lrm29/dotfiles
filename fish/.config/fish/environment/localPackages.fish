@@ -1,9 +1,9 @@
 # Packages installed locally
 # Use --prefix=$s/Packages when configuring packages
 
-set -x SOURCES $HOME/Sources
-set -x PACKAGES $HOME/LocalPackages
-set -x STOW_DIR $PACKAGES/stow
+set -gx SOURCES $HOME/Sources
+set -gx PACKAGES $HOME/LocalPackages
+set -gx STOW_DIR $PACKAGES/stow
 
 prependTo PATH $PACKAGES/bin
 prependTo PATH $PACKAGES/include

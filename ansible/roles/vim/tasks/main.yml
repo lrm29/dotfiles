@@ -1,0 +1,2 @@
+- include: task.yml tags=task
+- include: task-config.yml tags=task,task:config

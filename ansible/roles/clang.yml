@@ -1,0 +1,11 @@
+set LLVM_ROOT ~/Sources/llvm
+
+cd $LLVM_ROOT; and git pull
+cd $LLVM_ROOT/tools/clang; and git pull
+cd $LLVM_ROOT/tools/clang/tools/extra; and git pull
+cd $LLVM_ROOT/projects/compiler-rt; and git pull
+
+cd $LLVM_ROOT/build;
+    and cmake .. -DCMAKE_INSTALL_PREFIX=~/LocalPackages/stow/llvm -DLLVM_TOOL_CLANG_TOOLS_EXTRA_BUILD=ON;
+        and make -j8
+

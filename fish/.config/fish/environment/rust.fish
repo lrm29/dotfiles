@@ -1,0 +1,1 @@
+appendTo PATH ~/.cargo/bin
